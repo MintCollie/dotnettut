@@ -20,6 +20,24 @@ namespace dotnettut
                 Text = "Enter a phoneword:",
                 FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label))
             });
+
+            panel.Children.Add(phoneNumberText = new Entry
+            {
+                Text = "1-855-XAMARIN",
+            });
+
+            panel.Children.Add(translateButton = new Button
+            {
+                Text = "Translate"
+            });
+
+            panel.Children.Add(callButton = new Button
+            {
+                Text = "Call",
+                IsEnabled = false,
+            });
+
+            this.Content = panel;
         }
     }
 }
