@@ -24,17 +24,19 @@ namespace dotnettut
             panel.Children.Add(phoneNumberText = new Entry
             {
                 Text = "1-855-XAMARIN",
+		IsEnabled = true
             });
 
             panel.Children.Add(translateButton = new Button
             {
-                Text = "Translate"
+                Text = "Translate",
+		IsEnabled = true
             });
 
             panel.Children.Add(callButton = new Button
             {
                 Text = "Call",
-                IsEnabled = false,
+                IsEnabled = false
             });
 
             this.Content = panel;
